@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <!-- import CSS -->
+    <link rel="stylesheet" href="https://cdn.staticfile.org/element-ui/2.15.9/theme-chalk/index.css">
+    <style>
+        .c1{
+            border: 1px solid red; border-radius: 5px;height: 30px;
+        }
+    </style>
+</head>
+<body>
+<div id="app">
+    <!--el-row表示行  el-col表示列-->
+    <el-row>
+        <el-col span="12"><div class="c1"></div></el-col>
+        <el-col span="12"><div class="c1"></div></el-col>
+    </el-row>
+    <el-row>
+        <el-col span="8"><div class="c1"></div></el-col>
+        <el-col span="8"><div class="c1"></div></el-col>
+        <el-col span="8"><div class="c1"></div></el-col>
+    </el-row>
+    <h1>1:2:3</h1>
+    <el-row>
+        <el-col span="4"><div class="c1"></div></el-col>
+        <el-col span="8"><div class="c1"></div></el-col>
+        <el-col span="12"><div class="c1"></div></el-col>
+    </el-row>
+    <h1>1:3:1:1</h1>
+    <div style="width: 1200px;margin: 0 auto">
+        <el-row gutter="20">
+            <el-col span="4"><div class="c1"></div></el-col>
+            <el-col span="12"><div class="c1"></div></el-col>
+            <el-col span="4"><div class="c1"></div></el-col>
+            <el-col span="4"><div class="c1"></div></el-col>
+        </el-row>
+    </div>
+
+
+    <!--练习1: 四等份并居中 间距30-->
+    <!--练习2: 3份2:5:5并居中 间距10-->
+    <div style="width:1200px; margin:0 auto">
+        <el-row gutter="10">
+            <el-col span="4"><div class="c1"></div></el-col>
+            <el-col span="10"><div class="c1"></div></el-col>
+            <el-col span="10"><div class="c1"></div></el-col>
+        </el-row>
+    </div>
+</div>
+</body>
+<!-- import Vue before Element -->
+<script src="https://cdn.staticfile.org/vue/2.6.14/vue.min.js"></script>
+<!-- import JavaScript -->
+<script src="https://cdn.staticfile.org/element-ui/2.15.9/index.min.js"></script>
+<script>
+    let v = new Vue({
+        el: '#app',
+        data: function () {
+            return {
+
+            }
+        },
+        methods: {
+
+        }
+    })
+</script>
+</html>
